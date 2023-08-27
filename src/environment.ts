@@ -74,7 +74,7 @@ export async function checkEnvironmentVariables(): Promise<boolean> {
         console.log(`\nChecking servers...`);
         const spinner = ora({
             spinner: "dots2",
-            text: `Contacting ${ chalk.hex("#cc3366")("Endrpi") }`
+            text: `Contacting ${ chalk.hex("#cc3366")("Endrpi") }\n`
         });
         spinner.start();
 
@@ -89,7 +89,7 @@ export async function checkEnvironmentVariables(): Promise<boolean> {
             );
             console.log(`Neat huh?\n`);
         } else {
-            spinner.fail(`Failed to reach the ${ chalk.hex("#cc3366")("Endrpi") } server `);
+            spinner.fail(`Failed to reach the ${ chalk.hex("#cc3366")("Endrpi") } server`);
             console.log(
                 `Ensure the ${ chalk.blue(EnvironmentVariableKey.ENDRPI_URL) } environment variable is correct ` +
                 `and that you can reach ${ EnvironmentVariable.ENDRPI_URL } on this LAN.\n`

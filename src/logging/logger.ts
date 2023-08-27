@@ -41,7 +41,7 @@ function colorizeLevel(level: "info" | "warn" | "error" | string): string {
         case "warn":
             return chalk.yellow("WARN");
         case "error":
-            return chalk.red("RED");
+            return chalk.red("ERROR");
         default:
             return level;
     }
