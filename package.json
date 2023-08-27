@@ -1,6 +1,6 @@
 {
     "name": "@persanix-llc/chatrpi-server",
-    "version": "0.1.1",
+    "version": "0.1.2",
     "description": "Chat for Raspberry Pi (Chatrpi) is a voice assistant for the Raspberry Pi that can hold simple conversations and control GPIO output.",
     "homepage": "https://github.com/persanix-llc/chatrpi-server",
     "repository": {
