@@ -32,6 +32,7 @@ export type ChatResponse<T> = {
     continue: boolean,
     action: T extends unknown ? T : undefined
 }
+
 export type ChatFunction = ChatCompletionFunctions & { name: "respondFunction" };
 export type FunctionVariant = "RaspberryPi";
 export type FunctionMap = Record<FunctionVariant, ChatFunction>;

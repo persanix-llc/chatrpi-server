@@ -16,11 +16,14 @@
         "John Persano (https://github.com/jmp-12)"
     ],
     "main": "index.js",
+    "files": [
+        "/out"
+    ],
     "scripts": {
+        "copy-chatrpi-app": "copyfiles public/** out",
         "build": "tsc",
-        "copy-prompts": "copyfiles public/** out",
+        "postbuild": "yarn run copy-chatrpi-app",
         "prepublish": "yarn run build",
-        "postbuild": "yarn run copy-prompts",
         "prestart": "yarn run build",
         "start": "node ./out/index.js"
     },
