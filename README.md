@@ -13,6 +13,11 @@ and [Endrpi](https://endrpi.io/).
 * Conversational GPIO output control with contextual memory.
 * Extensible to other boards that accept HTTP requests.
 
+## Supported browsers
+
+* Chrome 116+ 
+
+
 ## Repositories
 
 1. (this repository) [chatrpi-server](https://github.com/persanix-llc/chatrpi-server) - Serves the front-end and handles
